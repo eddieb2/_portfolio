@@ -1,7 +1,5 @@
 import React from 'react';
 import ProjectItem from './ProjectItem';
-import WorkImg from '../../assets/projects/workImg.jpeg';
-import RealEstate from '../../assets/projects/realestate.jpg';
 import PortfolioImg from '../../assets/portfolio_website.png';
 import JavaFXAppImg from '../../assets/javafx2.png';
 
