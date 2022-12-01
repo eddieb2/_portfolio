@@ -1,4 +1,6 @@
 import React from 'react';
+import LambdaBadge from '../assets/lambdabadge.png';
+import WGUBadge from '../assets/wgu.png';
 
 const About = () => {
 	return (
@@ -21,12 +23,30 @@ const About = () => {
 					</div>
 					<div>
 						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem,
-							quae? Atque impedit maiores possimus nam, hic ab nostrum sunt eum
-							recusandae, ea voluptates dolorum dignissimos vero dicta cumque saepe
-							repellendus?
+							I am currently pursuing a B.S. in Computer Science from Western
+							Governors University. I am also a graduate from BloomTech, formerly
+							known as Lambda School.
 						</p>
 					</div>
+				</div>
+				<div className='w-[50%] flex justify-evenly mt-10'>
+					<a
+						href='https://www.credly.com/badges/2d39a218-35e4-437e-b465-1e8328677228/public_url'
+						target='_blank'
+					>
+						<img
+							src={LambdaBadge}
+							className='hover:scale-90 duration-200'
+							alt='BloomTech badge'
+						/>
+					</a>
+					<a>
+						<img
+							src={WGUBadge}
+							className='hover:scale-90 duration-200'
+							alt='WGU logo'
+						/>
+					</a>
 				</div>
 			</div>
 		</div>
