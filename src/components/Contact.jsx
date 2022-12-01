@@ -4,18 +4,18 @@ const Contact = () => {
 	return (
 		<div
 			name='contact'
-			className='w-full h-screen bg-[#0a192f] flex justify-center items-center p-4'
+			className='flex h-screen w-full items-center justify-center bg-[#0a192f] p-4'
 		>
 			<form
 				method='POST'
 				action='https://getform.io/f/f6eb7519-2352-4290-b16b-0050f4c9bd47'
-				className='flex flex-col max-w-[600px] w-full'
+				className='flex w-full max-w-[600px] flex-col'
 			>
 				<div className='pb-8'>
-					<p className='text-4xl font-bold inline border-b-4 border-b-red-400 text-gray-300'>
+					<p className='inline border-b-4 border-b-red-400 text-4xl font-bold text-gray-300'>
 						Contact
 					</p>
-					<p className='text-gray-400 py-4'>Submit the form below.</p>
+					<p className='py-4 text-gray-400'>Submit the form below.</p>
 				</div>
 				<input className='p-2 ' type='text' name='name' required placeholder={'Name'} />
 				<input
@@ -36,7 +36,7 @@ const Contact = () => {
 				></textarea>
 				<input
 					type='submit'
-					className='text-white border-2 px-6 py-3 my-4 mx-auto flex items-center hover:bg-red-400 hover:font-bold'
+					className='my-4 mx-auto flex items-center border-2 px-6 py-3 text-white hover:bg-red-400 hover:font-bold'
 				/>
 			</form>
 		</div>

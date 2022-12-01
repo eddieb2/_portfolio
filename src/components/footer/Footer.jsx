@@ -7,7 +7,7 @@ const Footer = ({ socialRedirect }) => {
 	return (
 		<div
 			name='about'
-			className='flex w-full bg-[#0a192f] text-gray-300 border-b-2 border-red-400 justify-evenly p-2 lg:hidden'
+			className='flex w-full justify-evenly border-b-2 border-red-400 bg-[#0a192f] p-2 text-gray-300 lg:hidden'
 		>
 			<FaLinkedin size={40} onClick={() => socialRedirect('Linkedin')} />
 			<FaGithub size={40} onClick={() => socialRedirect('Github')} />

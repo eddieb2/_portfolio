@@ -14,7 +14,7 @@ const NavBar = ({ socialRedirect }) => {
 	};
 
 	return (
-		<div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 shadow-sm shadow-red-400'>
+		<div className='fixed flex h-[80px] w-full items-center justify-between bg-[#0a192f] px-4 text-gray-300 shadow-sm shadow-red-400'>
 			<div>
 				<img src={dark_zone_sprite} alt='Logo Image' />
 			</div>

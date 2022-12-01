@@ -14,24 +14,24 @@ const ProjectItem = ({
 		<div
 			id='projectItemContainer' // not in use?
 			style={{ backgroundImage: `url(${projectImg})` }}
-			className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+			className='content-div group container mx-auto flex items-center justify-center rounded-md shadow-lg shadow-[#040c16]'
 			onMouseEnter={() => setIsHovered(true)}
 		>
-			<div className='opacity-0 group-hover:opacity-100 flex flex-col items-center'>
-				<span className='sm:text-2xl text-lg font-bold text-white tracking-wider'>
+			<div className='flex flex-col items-center opacity-0 group-hover:opacity-100'>
+				<span className='text-lg font-bold tracking-wider text-white sm:text-2xl'>
 					{text}
 				</span>
 				{isHovered ? (
-					<div className='pt-8 text-center flex sm:flex-row flex-col '>
+					<div className='flex flex-col pt-8 text-center sm:flex-row '>
 						{!disable ? (
 							<a href={demoURL} className='px-3' target='_blank'>
-								<button className='text-center rounded-lg px-4 py-3 bg-white text-gray-700 font-bold md:text-lg text-sm hover:scale-110 duration-200 sm:m-auto m-2'>
+								<button className='m-2 rounded-lg bg-white px-4 py-3 text-center text-sm font-bold text-gray-700 duration-200 hover:scale-110 sm:m-auto md:text-lg'>
 									Demo
 								</button>
 							</a>
 						) : null}
 						<a href={codeURL} target='_blank'>
-							<button className='text-center rounded-lg px-4 py-3 bg-white text-gray-700 font-bold md:text-lg text-sm hover:scale-110 duration-200'>
+							<button className='rounded-lg bg-white px-4 py-3 text-center text-sm font-bold text-gray-700 duration-200 hover:scale-110 md:text-lg'>
 								Code
 							</button>
 						</a>

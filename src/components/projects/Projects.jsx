@@ -7,11 +7,11 @@ import Conways from '../../assets/conways.png';
 
 const Projects = () => {
 	return (
-		<div name='projects' className='w-full h-screen text-gray-300 bg-[#0a192f]'>
+		<div name='projects' className='h-screen w-full bg-[#0a192f] text-gray-300'>
 			{/* container */}
-			<div className='xl:max-w-[1000px] max-w-[800px] mx-auto p-4 flex flex-col justify-center w-full h-full border-b-4 border-red-400'>
+			<div className='mx-auto flex h-full w-full max-w-[800px] flex-col justify-center border-b-4 border-red-400 p-4 xl:max-w-[1000px]'>
 				<div className='pb-8'>
-					<p className='text-4xl font-bold inline border-b-4 text-gray-300 border-red-400'>
+					<p className='inline border-b-4 border-red-400 text-4xl font-bold text-gray-300'>
 						Software Projects
 					</p>
 					<p className='py-6'>Check out some of my recent work.</p>
