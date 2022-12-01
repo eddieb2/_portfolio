@@ -17,9 +17,15 @@ const Contact = () => {
 					</p>
 					<p className='py-4 text-gray-400'>Submit the form below.</p>
 				</div>
-				<input className='p-2 ' type='text' name='name' required placeholder={'Name'} />
 				<input
-					className='my-4 p-2'
+					className='rounded-lg p-2 invalid:border-red-500 invalid:text-red-600 focus:outline-none focus:ring-4 focus:ring-teal-500 focus:invalid:border-red-500 focus:invalid:ring-red-500'
+					type='text'
+					name='name'
+					required
+					placeholder={'Name'}
+				/>
+				<input
+					className='my-4 rounded-lg p-2 invalid:border-red-500 invalid:text-red-600 focus:outline-none focus:ring-4 focus:ring-teal-500 focus:invalid:border-red-500 focus:invalid:ring-red-500'
 					type='email'
 					name='email'
 					required
@@ -27,7 +33,7 @@ const Contact = () => {
 				/>
 
 				<textarea
-					className='p-2'
+					className='rounded-lg p-2 invalid:border-red-500 invalid:text-red-600 focus:outline-none focus:ring-4 focus:ring-teal-500 focus:invalid:border-red-500 focus:invalid:ring-red-500'
 					name='message'
 					cols='30'
 					rows='10'
