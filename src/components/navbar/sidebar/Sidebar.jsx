@@ -3,28 +3,9 @@ import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FiInstagram } from 'react-icons/fi';
-import pdf from '../../../assets/resume.pdf';
 import SidebarItem from './SidebarItem';
 
-const Sidebar = () => {
-	const socialRedirect = (socialMediaName) => {
-		console.log(socialMediaName);
-		switch (socialMediaName) {
-			case 'Linkedin':
-				window.open('https://www.linkedin.com/in/edward-blanciak/', '_blank');
-				break;
-			case 'Github':
-				window.open('https://github.com/eddieb2', '_blank');
-				break;
-			case 'Instagram':
-				window.open('https://www.instagram.com/blanciakllc/', '_blank');
-				break;
-			case 'Resume':
-				window.open(pdf, 'fullscreen=yes');
-				break;
-		}
-	};
-
+const Sidebar = ({ socialRedirect }) => {
 	return (
 		<div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
 			<ul>

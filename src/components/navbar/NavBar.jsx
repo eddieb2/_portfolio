@@ -6,7 +6,7 @@ import MobileMenu from './mobile_menu/MobileMenu';
 import DropdownIcon from './Dropdown';
 import Sidebar from './sidebar/Sidebar';
 
-const NavBar = () => {
+const NavBar = ({ socialRedirect }) => {
 	const [dropDown, setDropDown] = useState(false);
 
 	const handleClick = () => {
@@ -21,7 +21,7 @@ const NavBar = () => {
 			<Menu />
 			<DropdownIcon dropDown={dropDown} handleClick={handleClick} />
 			<MobileMenu dropDown={dropDown} handleClick={handleClick} />
-			<Sidebar />
+			<Sidebar socialRedirect={socialRedirect} />
 		</div>
 	);
 };
