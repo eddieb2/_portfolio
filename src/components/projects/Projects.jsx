@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectItem from './ProjectItem';
 import PortfolioImg from '../../assets/portfolio_website.png';
 import JavaFXAppImg from '../../assets/javafx2.png';
+import BudgetApp from '../../assets/budget_blocks.png';
 
 const Projects = () => {
 	return (
@@ -30,6 +31,13 @@ const Projects = () => {
 						demoURL='https://youtu.be/LEHPoJ39nLI'
 						codeURL='https://github.com/eddieb2/c195'
 						projectImg={JavaFXAppImg}
+					/>
+					<ProjectItem
+						text='Budgeting App.'
+						// demoURL='https://youtu.be/LEHPoJ39nLI'
+						disable={true}
+						codeURL='https://github.com/BloomTech-Labs/budget-blocks-fe'
+						projectImg={BudgetApp}
 					/>
 				</div>
 			</div>
