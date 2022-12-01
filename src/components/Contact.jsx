@@ -17,18 +17,27 @@ const Contact = () => {
 					</p>
 					<p className='text-gray-400 py-4'>Submit the form below.</p>
 				</div>
-				<input className='p-2 ' type='text' name='name' placeholder='Name' />
-				<input className='my-4 p-2' type='email' name='email' placeholder='Email' />
+				<input className='p-2 ' type='text' name='name' required placeholder={'Name'} />
+				<input
+					className='my-4 p-2'
+					type='email'
+					name='email'
+					required
+					placeholder='Email'
+				/>
+
 				<textarea
 					className='p-2'
 					name='message'
 					cols='30'
 					rows='10'
 					placeholder='Message...'
+					required
 				></textarea>
-				<button className='text-white border-2 px-6 py-3 my-4 mx-auto flex items-center hover:bg-red-400 hover:font-bold'>
-					Send
-				</button>
+				<input
+					type='submit'
+					className='text-white border-2 px-6 py-3 my-4 mx-auto flex items-center hover:bg-red-400 hover:font-bold'
+				/>
 			</form>
 		</div>
 	);
