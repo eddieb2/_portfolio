@@ -3,6 +3,7 @@ import ProjectItem from './ProjectItem';
 import PortfolioImg from '../../assets/portfolio_website.png';
 import JavaFXAppImg from '../../assets/javafx2.png';
 import BudgetApp from '../../assets/budget_blocks.png';
+import Conways from '../../assets/conways.png';
 
 const Projects = () => {
 	return (
@@ -38,6 +39,12 @@ const Projects = () => {
 						disable={true}
 						codeURL='https://github.com/BloomTech-Labs/budget-blocks-fe'
 						projectImg={BudgetApp}
+					/>
+					<ProjectItem
+						text='Conways'
+						demoURL='https://conways-game-of-life-ten.vercel.app/'
+						codeURL='https://github.com/eddieb2/ConwaysGameOfLife'
+						projectImg={Conways}
 					/>
 				</div>
 			</div>
