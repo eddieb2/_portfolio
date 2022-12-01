@@ -6,7 +6,7 @@ const MobileMenu = ({ dropDown, handleClick }) => {
 		<div
 			className={
 				!dropDown
-					? ' opacity-0'
+					? ' hidden'
 					: 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center '
 			}
 		>
