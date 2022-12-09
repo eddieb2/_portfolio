@@ -19,7 +19,7 @@ const Skills = () => {
 			<div className='mx-auto flex h-full w-full max-w-[800px] flex-col justify-center border-b-4 border-red-400 p-4 xl:max-w-[1000px]'>
 				<div>
 					<p className='inline border-b-4 border-red-400 text-4xl font-bold'>Skills</p>
-					<p className='py-4'>These are the technologies I've worked with.</p>
+					<p className='py-4'>These are some of the technologies I've worked with.</p>
 				</div>
 
 				{/* Anything over 6 SkillItems causes overflow */}

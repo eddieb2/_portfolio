@@ -16,6 +16,9 @@ const MobileMenu = ({ dropDown, handleClick }) => {
 				<MobileMenuItem text='Skills' location='skills' handleClick={handleClick} />
 				<MobileMenuItem text='Projects' location='projects' handleClick={handleClick} />
 				<MobileMenuItem text='Contact' location='contact' handleClick={handleClick} />
+				<li className='py-6 text-4xl' onClick={handleClick}>
+					<a href='https://www.instagram.com/blanciakllc/'>Construction</a>
+				</li>
 			</ul>
 		</div>
 	);
